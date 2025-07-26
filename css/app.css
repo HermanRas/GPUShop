@@ -1,0 +1,9 @@
+   .navbar-light>#navbar3SupportedContent>ul>li.nav-item>a {
+       color: #000;
+       /* Sets text color to white */
+   }
+
+   .navbar-light>#navbar3SupportedContent>div>label {
+       color: #000;
+       /* Sets text color to white */
+   }
