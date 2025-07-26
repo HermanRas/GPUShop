@@ -1,9 +1,94 @@
-   .navbar-light>#navbar3SupportedContent>ul>li.nav-item>a {
-       color: #000;
+   #navbarSupportedContent>ul>li>a {
+       color: var(--bs-dark);
        /* Sets text color to white */
    }
 
-   .navbar-light>#navbar3SupportedContent>div>label {
-       color: #000;
-       /* Sets text color to white */
+   body {
+       background-color: var(--bs-body-bg);
+       color: var(--bs-body-color);
+       display: flex;
+       flex-direction: column;
+       min-height: 100vh;
+   }
+
+   main {
+       flex: 1;
+   }
+
+   .footer {
+       background-color: var(--bs-dark) !important;
+   }
+
+   .card {
+       /* background-color: var(--bs-light); */
+       /* border: 1px solid var(--bs-secondary); */
+       transition: all 0.3s ease-in-out;
+   }
+
+   .price-original {
+       text-decoration: line-through;
+       color: var(--bs-gray-500);
+       font-size: 0.9em;
+   }
+
+   .price-special {
+       color: var(--bs-warning);
+       font-weight: bold;
+       font-size: 1.2em;
+   }
+
+   .form-range::-webkit-slider-thumb {
+       background: var(--bs-primary);
+   }
+
+   .form-range::-moz-range-thumb {
+       background: var(--bs-primary);
+   }
+
+   .carousel-caption {
+       border-radius: .5rem;
+   }
+
+   .footer a {
+       color: var(--bs-gray-400);
+       text-decoration: none;
+   }
+
+   .footer a:hover {
+       color: var(--bs-primary);
+   }
+
+   .view-toggle .btn {
+       color: var(--bs-dark);
+       border-color: var(--bs-warning);
+   }
+
+   .view-toggle .btn.active {
+       background-color: var(--bs-warning);
+       color: var(--bs-dark);
+   }
+
+   /* Styles for List View */
+   .card.card-list-view {
+       flex-direction: row;
+   }
+
+   .card.card-list-view .card-img-top {
+       width: 20%;
+       height: 100%;
+       object-fit: cover;
+       border-top-left-radius: var(--bs-card-border-radius);
+       border-bottom-left-radius: var(--bs-card-border-radius);
+       border-top-right-radius: 0;
+   }
+
+   .card.card-list-view .card-body {
+       flex: 1 1 auto;
+   }
+
+   .card.card-list-view .card-footer {
+       width: auto;
+       border-top: 0;
+       border-left: 1px solid var(--bs-dark);
+       ;
    }
